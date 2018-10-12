@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: 'about', component: AProposComponent },
   { path: 'word', component: MotDirecteurComponent },
   { path: 'login', component: LoginComponent },
-  { path: '/home', component: AccueilComponent },
-  { path: '', redirectTo: "home" },
+  { path: 'home', component: AccueilComponent },
+  { path: '', redirectTo: "/home", pathMatch: "full" },
   { path: '**', redirectTo: "/home", pathMatch: "full" }
 ];
 
